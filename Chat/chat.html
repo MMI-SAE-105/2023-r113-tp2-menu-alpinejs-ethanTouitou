@@ -28,9 +28,7 @@
         .noscroll body {
             overflow: hidden;
         }
-        nav>ul>li>a::before {
-            content: url(./icones/);
-        }
+      
     </style>
 </head>
 
@@ -39,7 +37,7 @@
     <!-- header>h1{Test de menu} -->
     <header>
         <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menuBtn">menu</button>
-        <h1>Chats</h1>
+        <h1>Chats 1</h1>
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
             <ul>
                 <li><a href="#">item 1</a></li>
@@ -47,5 +45,9 @@
                 <li><a href="#">item 3</a></li>
             </ul>
         </nav>
-
+        <nav>
+            <ul>
+                <li><a href="index.html">Acceuil des chats</a></li>
+            </ul>
+        </nav>
     </header>
